@@ -12,13 +12,12 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 using System.Xml;
 using System.Xml.Linq;
 using Windows.Storage;
 using System.Collections.ObjectModel;
 using System.Reflection;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -47,7 +46,6 @@ namespace ContactsApp
             const string fileName = "Contacts.xml";
 
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-
             var path = assembly.GetManifestResourceNames()
                 .FirstOrDefault(n => n.EndsWith(fileName, StringComparison.OrdinalIgnoreCase));
 
@@ -68,5 +66,34 @@ namespace ContactsApp
 
             DataContext = this; // better to move this inside the constructor
         }
+
+        private void lstBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Debug.WriteLine("fdsf");
+            XDocument xml = XDocument.Load(@"C:\Users\Rick\Desktop\ContactsApp\ContactsApp\Contacts.xml");
+
+            var nodes = (from n in xml.Descendants("Contact").
+            Where(r => r.Element("ID").Value == lstBox.SelectedItem.ToString())
+                         select new
+                         {
+                             ID = (string)n.Element("ID").Value,
+                             FirstName = (string)n.Element("FirstName").Value,
+                             LastName = (string)n.Element("LastName").Value,
+                             Mobile = (string)n.Element("Mobile").Value,
+                             Email = (string)n.Element("Email").Value
+                         });
+
+            foreach (var n in nodes)
+            {
+                txtID.Text = n.ID;
+                txtFirstName.Text = n.FirstName;
+                txtLastName.Text = n.LastName;
+                txtMobile.Text = n.Mobile;
+                txtEmail.Text = n.Email;
+            };
+
+        }
+
+       
     }
 }
