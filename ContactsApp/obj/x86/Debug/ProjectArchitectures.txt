@@ -1,1 +1,1 @@
-C:\Users\Rick\Desktop\ContactsApp\ContactsApp\ContactsApp.csproj;x86
+C:\Users\Rick Pro\Desktop\CA test\ContactsApp\ContactsApp\ContactsApp.csproj;x86

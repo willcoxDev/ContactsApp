@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Contacts>
+	<Contact>
+		<ID>salpea</ID>
+		<FirstName>Sally</FirstName>
+		<LastName>Pearson</LastName>
+		<Mobile>0431529562</Mobile>
+		<Email>sallyp@hotmail.com</Email>
+	</Contact>
+	<Contact>
+		<ID>gresul</ID>
+		<FirstName>Greg</FirstName>
+    <LastName>Sullivan</LastName>
+		<Mobile>0432928381</Mobile>
+		<Email>gregsul@outlook.com</Email>
+	</Contact>
+	<Contact>
+		<ID>chrmac</ID>
+		<FirstName>Christie</FirstName>
+    <LastName>Mack</LastName>
+		<Mobile>0421231231</Mobile>
+		<Email>christiemack@gmail.com</Email>
+	</Contact>
+</Contacts>

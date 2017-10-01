@@ -22010,15 +22010,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rick\\.nuget\\packages\\": {}
+    "C:\\Users\\Rick Pro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rick\\Desktop\\ContactsApp\\ContactsApp\\ContactsApp.csproj",
+      "projectUniqueName": "C:\\Users\\Rick Pro\\Desktop\\CA test\\ContactsApp\\ContactsApp\\ContactsApp.csproj",
       "projectName": "ContactsApp",
-      "projectPath": "C:\\Users\\Rick\\Desktop\\ContactsApp\\ContactsApp\\ContactsApp.csproj",
-      "outputPath": "C:\\Users\\Rick\\Desktop\\ContactsApp\\ContactsApp\\obj\\",
+      "projectPath": "C:\\Users\\Rick Pro\\Desktop\\CA test\\ContactsApp\\ContactsApp\\ContactsApp.csproj",
+      "outputPath": "C:\\Users\\Rick Pro\\Desktop\\CA test\\ContactsApp\\ContactsApp\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "uap10.0.10586"
